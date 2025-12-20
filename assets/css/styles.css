@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #4361ee;
+  --success-color: #4cc9f0;
+  --danger-color: #f72585;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.validator-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: none;
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.validator-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.validator-body {
+  padding: 30px;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+}
+
+.btn-validate {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.btn-validate:hover {
+  background-color: #3a56d4;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(67, 97, 238, 0.2);
+}
+
+.btn-validate:active {
+  transform: translateY(0);
+}
+
+.result-area {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  display: none;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.valid-result {
+  background-color: rgba(76, 201, 240, 0.15);
+  color: #0a9396;
+  border-left: 5px solid var(--success-color);
+}
+
+.invalid-result {
+  background-color: rgba(247, 37, 133, 0.15);
+  color: #9d0208;
+  border-left: 5px solid var(--danger-color);
+}
+
+.result-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.card-type {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.card-examples {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.card-examples span {
+  cursor: pointer;
+  margin: 0 8px;
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.card-examples span:hover {
+  color: #3a56d4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #6c757d;
+}
