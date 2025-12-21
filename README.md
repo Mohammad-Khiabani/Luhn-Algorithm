@@ -1,6 +1,10 @@
 
 # 🔍 Luhn Algorithm Validation
 
+## 🌐 Languages
+- [🇬🇧 English](README.md)
+- [🇮🇷 Persian](README_FA.md)
+
 ## 📑 Table of Contents
 - [Project Description](#project-description)
 - [Project Origin Story](#project-origin-story)
